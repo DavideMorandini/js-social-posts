@@ -6,9 +6,7 @@
 
 body {
     font-family: 'Times New Roman', Times, serif;
-    background-color: #023047;
-    color: #050505;
-    font-size: 100%;
+    background-color: rebeccapurple;
 }
 
 h1 {
@@ -17,27 +15,27 @@ h1 {
 }
 
 .main-title {
+    margin: 24px 0px;
     text-align: center;
-    margin: 24px 0;
 }
 
 .posts-list {
+    margin: 0 auto;
     width: 90%;
     max-width: 600px;
-    margin: 0 auto;
 }
 
-.posts-list>* {
+.posts-list {
     margin-bottom: 24px;
 }
 
 .post {
-    padding: 16px;
+    padding: 20px;
     background-color: white;
 }
 
 .post__header {
-    margin-bottom: 16px;
+    margin-bottom: 20px;
 }
 
 .post-meta {
@@ -45,7 +43,7 @@ h1 {
 }
 
 .post-meta__icon {
-    margin-right: 24px;
+    margin-right: 20px;
 }
 
 .post-meta__data {
@@ -54,35 +52,28 @@ h1 {
     justify-content: center;
 }
 
-.post-meta__author {
-    font-weight: bold;
-}
-
 .post-meta__time {
-    font-size: 0.8rem;
+    font-size: 1rem;
 }
 
 .profile-pic {
-    border-radius: 50%;
     max-width: 60px;
+    border-radius: 100%;
 }
 
 .profile-pic-default {
+    overflow: hidden;
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-color: #0CD977;
-    height: 60px;
+    border-radius: 100%;
     width: 60px;
-    overflow: hidden;
-    border-radius: 50%;
+    height: 60px;
 }
 
 .profile-pic-default span {
-    font-weight: bold;
-    color: #023047;
     font-size: 1.2rem;
-    text-transform: uppercase;
 }
 
 .post__text {
@@ -99,27 +90,19 @@ h1 {
 
 .likes {
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
     align-items: center;
 }
 
 .like-button {
+    color: blue;
     display: inline-block;
-    padding: 16px;
-    border-radius: 8px;
+    border-radius: 10px;
+    padding: 20px;
     text-decoration: none;
-    color: #404040;
 }
 
 .like-button:not(.like-button--liked):hover {
-    background-color: #e3e3e3
-}
-
-.like-button__label {
-    font-weight: bold;
-}
-
-.like-button--liked {
-    color: #0CD977;
-    cursor: pointer;
+    background-color: red;
 }
